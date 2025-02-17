@@ -1,0 +1,251 @@
+/*màu nền web*/
+body {
+  background-color: rgb(255, 243, 214);
+  width: 100%;
+  text-align: justify;
+  margin: 0 auto;
+
+}
+/*gạch phân cách tiêu đề và ngày tháng*/
+.line1 {
+  height: 30px;
+  width: 2px;
+  background-color: rgb(0, 0, 0);
+  margin: 0px 15px;
+}
+/*Ngày tháng năm*/
+.p0 {
+  font-size: 22px;
+  color: rgb(0, 0, 0);
+  font-weight: 100;
+}
+/*Nhóm các tiêu đề, ngày tháng năm*/
+.container {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  padding: 0px 4px;
+}
+/*tiêu đề và hiệu ứng  book in the world*/
+.a1 {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+.a1 .h1_1 {
+  font-family: fantasy;
+  text-align: left;
+  text-indent: 45px;
+  width: auto;
+}
+/*phần gạch xám dưới tiêu đề*/
+.hr1 {
+  height: 2px;
+  background-color: rgb(175, 172, 163);
+  border: none;
+}
+/*phần mục lục*/
+.menu {
+  list-style: none;
+  display: inline-flex;
+}
+.menu li {
+  font-size: 20px;
+  margin: 0 7px;
+  text-align: center;
+  color: black;
+}
+.menu li a {
+  text-decoration: none;
+  color: black;
+}
+.menu li a:hover {
+  color: rgb(10, 26, 171);
+  text-decoration: underline;
+}
+/*đường kẻ đen dưới mục lục*/
+.hr2 {
+  height: 2px;
+  background-color: black;
+  border: none;
+}
+/*Tìm kiếm*/
+* { box-sizing: border-box;}
+
+/* Container để căn giữa hộp tìm kiếm */
+.search-container {
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    height: 10vh; /* Đảm bảo chiếm toàn bộ màn hình */
+}
+
+/* Hộp tìm kiếm */
+.search-box {
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 25px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng */
+}
+
+/* Ô nhập */
+.search-text {
+    border: none;
+    outline: none;
+    background: none;
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+}
+
+/* Nút tìm kiếm */
+.search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+/*Phần này kí hiệu sẽ có dấu ! ở dưới cùng*/
+.box1,
+.box4,
+.box6 {
+  background-color: brown;
+}
+.box2,
+.box5,
+.box7 {
+  background-color: rgb(255, 255, 255);
+}
+.box3,
+.box8 {
+  background-color: rgb(103, 204, 20);
+}
+.container1 {
+  display: grid;
+  height: 50px;
+  grid-template-columns: repeat(24, 75px);
+  grid-template-rows: repeat(11, 70px);
+  
+}
+.box {
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: justify;
+  flex-grow: 1;
+  padding: 0px 10px 0px 20px;
+  /*ô 1*/
+}
+.box1 {
+  grid-row: 1/6;
+  grid-column: 4/12;
+}
+.a1b {
+  text-decoration: none;
+  border: none;
+}
+.a1b:hover {
+  text-decoration: underline;
+  color: darkblue;
+}
+.img1 {
+  width: 600px;
+}
+/*ô 2*/
+.box2 {
+  grid-row: 1/6;
+  grid-column: 12/18;
+}
+.h2 {
+  font-family: "Times New Roman", Times, serif;
+}
+.p2 {
+  font-size: 25px;
+}
+.a2b {
+  text-decoration: none;
+  border: none;
+}
+.a2b:hover {
+  text-decoration: underline;
+  color: darkblue;
+}
+/* Bảng xếp hạng 1*/
+.box3 {
+  grid-column: 19/23;
+  grid-row: 1/6;
+  border-radius: 30px;
+}
+.h3 {
+  font-family: "Times New Roman", Times, serif;
+  padding: 0px 20px 10px 20px;
+  text-indent: 20px;
+}
+.bxh1 {
+  font-size: 30px;
+}
+/*Ô số 4*/
+.box4 {
+  grid-column: 4/7;
+  grid-row: 7/12;
+}
+.a4b {
+  text-decoration: none;
+  border: none;
+}
+.a4b:hover {
+  text-decoration: underline;
+  color: darkblue;
+}
+/*ô số 5*/
+.box5 {
+  grid-column: 7/11;
+  grid-row: 7/12;
+}
+.a5b {
+  text-decoration: none;
+  border: none;
+}
+.a5b:hover {
+  text-decoration: underline;
+  color: darkblue;
+}
+/*ô số 6*/
+.box6 {
+  grid-column: 12/15;
+  grid-row: 7/12;
+}
+.a6b {
+  text-decoration: none;
+  border: none;
+}
+.a6b:hover {
+  text-decoration: underline;
+  color: darkblue;
+}
+/*Ô số 7*/
+.box7 {
+  grid-column: 15/18;
+  grid-row: 7/12;
+}
+.a7b {
+  text-decoration: none;
+  border: none;
+}
+.a7b:hover {
+  text-decoration: underline;
+  color: darkblue;
+}
+/*Ô số 8*/
+.box8 {
+  grid-column: 19/23;
+  grid-row: 7/12;
+  border-radius: 30px;
+}
+.h8 {
+  font-family: "Times New Roman", Times, serif;
+  padding: 0px 20px 10px 20px;
+  text-indent: 20px;
+}
