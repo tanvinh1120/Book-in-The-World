@@ -1,7 +1,7 @@
 body {
   justify-content: center;
   align-items: center;
-margin:0 auto;
+  margin: 0 auto;
   background-color: rgb(255, 243, 214);
 }
 #date-time {
@@ -96,12 +96,13 @@ margin:0 auto;
   height: 3px;
   width: 100vw;
 }
-#slogan{
-text-align: center;
-justify-content:center;
-align-items: center;
-font-size: 25px;
-padding:10px 0px 0px 0px;}
+#slogan {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  padding: 10px 0px 0px 0px;
+}
 #a1 {
   text-decoration: none;
   color: black;
@@ -110,43 +111,112 @@ padding:10px 0px 0px 0px;}
   text-decoration: underline;
   color: darkblue;
 }
-#gtvct{padding:10px 0px 10px 20px;}
-#gt{text-align:justify;
-  display: flex; /* Thêm dòng này */
-  justify-content: center;
-  align-items: center;
+#gtvct {
+  padding: 10px 0px 10px 20px;
+}
+#p1 {
+  display: flex;
+  justify-content: center; /* Căn giữa theo chiều ngang */
+}
+
+#gt {
+  width: 50%; /* Để nó chỉ chiếm 50% chiều rộng */
+  text-align: justify;
   font-size: 25px;
-  padding: 10px 0px 0px 30px;
-
-}
-#p1{text-align: center;
 }
 
+#a2 {
+  text-decoration: none;
+  color: black;
+}
+#a2:hover {
+  text-decoration: underline;
+  color: darkblue;
+}
+#h2 {
+  padding: 10px 0px 10px 20px;
+}
 
-#a2{text-decoration:none;
-  color:black;}
-  #a2:hover {text-decoration: underline;
-  color:darkblue;}
-  #h2{padding:10px 0px 10px 20px;}
+#img1 {
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
-  #anh1{width:600px;
-  flex:1;}
-#nd1 {flex:1;}
-#dong1{display:flex;
-flex:2;}
-#dong2{display:flex;
-flex:2;}
-#nd2{flex:1;}
-#anh2{flex:1;}
-#a3{text-decoration:none;
-  color:black;}
-  #a3:hover {text-decoration: underline;
-  color:darkblue;}
-  #h3{padding:10px 0px 10px 20px;}
-  #bxh1{background-color: rgb(255, 245, 152);  border-radius: 30px;}
-  #bxh2{background-color: rgb(253, 235, 134);  border-radius: 30px;}
-#bxh{display:flex;
+}
+#nd1 {
+  flex: 1;
+  font-size: 25px;
+
+  text-align: justify;
+  padding: 50 px;
+}
+
+#dong1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 80%;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fdf6e3;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+
+}
+#dong2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fdf6e3;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+#nd2 {
+  flex: 1;
+  font-size: 25px;
+
+  text-align: justify;
+  padding: 50 px;
+}
+#anh2 {
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#a3 {
+  text-decoration: none;
+  color: black; 
+}
+#a3:hover {
+  text-decoration: underline;
+  color: darkblue;
+}
+#h3 {
+  padding: 10px 0px 10px 20px;
+}
+#bxh1 {
+  background-color: rgb(255, 245, 152);
+  border-radius: 30px;
+}
+#bxh2 {
+  background-color: rgb(253, 235, 134);
+  border-radius: 30px;
+}
+#bxh {
+  display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;}
-
-
+  justify-content: space-around;
+}
+#join{   width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;}
