@@ -1,0 +1,152 @@
+body {
+  justify-content: center;
+  align-items: center;
+margin:0 auto;
+  background-color: rgb(255, 243, 214);
+}
+#date-time {
+  font-size: 30px;
+  padding: 40px 0px 0px 20px;
+  border-radius: 10px;
+}
+#h1_1 {
+  font-family: fantasy;
+  text-align: left;
+  text-indent: 5px;
+  width: auto;
+  font-size: 40px;
+  padding: 0px 20px 5px 10px;
+}
+#a0 {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+#Tieude {
+  display: flex;
+}
+#Modau {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+/* Container để căn giữa hộp tìm kiếm */
+.search-container {
+  display: flex;
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  margin-right: 50px;
+}
+
+/* Hộp tìm kiếm */
+.search-box {
+  background: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 25px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng */
+}
+
+/* Ô nhập */
+.search-text {
+  border: none;
+  outline: none;
+  background: none;
+  padding: 10px;
+  width: 300px;
+  font-size: 16px;
+}
+
+/* Nút tìm kiếm */
+.search-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+#hr1 {
+  height: 3px;
+  background-color: rgb(175, 172, 163);
+  border: none;
+  width: 100vw;
+}
+/*phần mục lục*/
+.menu {
+  list-style: none;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+.menu li {
+  font-size: 30px;
+  margin: 0 7px;
+  text-align: center;
+  color: black;
+}
+.menu li a {
+  text-decoration: none;
+  color: black;
+}
+.menu li a:hover {
+  color: rgb(10, 26, 171);
+  text-decoration: underline;
+}
+#hr2 {
+  background-color: black;
+  border: none;
+  height: 3px;
+  width: 100vw;
+}
+#slogan{
+text-align: center;
+justify-content:center;
+align-items: center;
+font-size: 25px;
+padding:10px 0px 0px 0px;}
+#a1 {
+  text-decoration: none;
+  color: black;
+}
+#a1:hover {
+  text-decoration: underline;
+  color: darkblue;
+}
+#gtvct{padding:10px 0px 10px 20px;}
+#gt{text-align:justify;
+  display: flex; /* Thêm dòng này */
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  padding: 10px 0px 0px 30px;
+
+}
+#p1{text-align: center;
+}
+
+
+#a2{text-decoration:none;
+  color:black;}
+  #a2:hover {text-decoration: underline;
+  color:darkblue;}
+  #h2{padding:10px 0px 10px 20px;}
+
+  #anh1{width:600px;
+  flex:1;}
+#nd1 {flex:1;}
+#dong1{display:flex;
+flex:2;}
+#dong2{display:flex;
+flex:2;}
+#nd2{flex:1;}
+#anh2{flex:1;}
+#a3{text-decoration:none;
+  color:black;}
+  #a3:hover {text-decoration: underline;
+  color:darkblue;}
+  #h3{padding:10px 0px 10px 20px;}
+  #bxh1{background-color: rgb(255, 245, 152);  border-radius: 30px;}
+  #bxh2{background-color: rgb(253, 235, 134);  border-radius: 30px;}
+#bxh{display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;}
+
+
