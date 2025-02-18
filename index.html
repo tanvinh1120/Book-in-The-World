@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Book in The World</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <style>
       @import "style2.css";
@@ -12,95 +18,141 @@
   </head>
   <body>
     <div id="Modau">
-        <div id="Tieude">
-          <div id="Logo"> <a href="index.html" id="a0"><h1 id="h1_1">Book in The World</h1></a> </div>
-          <div id="date-time"></div>
-          <script>
-                    function updateDateTime() {
-                let now = new Date();
-                let daysOfWeek = ["Chủ Nhật", "Thứ Hai", "Thứ Ba", "Thứ Tư", "Thứ Năm", "Thứ Sáu", "Thứ Bảy"];
-    
-                let dayOfWeek = daysOfWeek[now.getDay()]; // Lấy thứ hiện tại
-                let day = now.getDate().toString().padStart(2, '0');
-                let month = (now.getMonth() + 1).toString().padStart(2, '0');
-                let year = now.getFullYear();
-    
-                document.getElementById("date-time").innerText = `${dayOfWeek}, ${day}/${month}/${year} `;
-            }
-    
-            setInterval(updateDateTime, 1000);
-            updateDateTime();
-          </script>
+      <div id="Tieude">
+        <div id="Logo">
+          <a href="index.html" id="a0"><h1 id="h1_1">Book in The World</h1></a>
         </div>
-        <div class="search-container">
-            <form class="search-box">
-                <input type="text" class="search-text" placeholder="Search...">
-                <button type="submit" class="search-button">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-            </form>
-        </div>
+        <div id="date-time"></div>
+        <script>
+          function updateDateTime() {
+            let now = new Date();
+            let daysOfWeek = [
+              "Chủ Nhật",
+              "Thứ Hai",
+              "Thứ Ba",
+              "Thứ Tư",
+              "Thứ Năm",
+              "Thứ Sáu",
+              "Thứ Bảy",
+            ];
+
+            let dayOfWeek = daysOfWeek[now.getDay()]; // Lấy thứ hiện tại
+            let day = now.getDate().toString().padStart(2, "0");
+            let month = (now.getMonth() + 1).toString().padStart(2, "0");
+            let year = now.getFullYear();
+
+            document.getElementById(
+              "date-time"
+            ).innerText = `${dayOfWeek}, ${day}/${month}/${year} `;
+          }
+
+          setInterval(updateDateTime, 1000);
+          updateDateTime();
+        </script>
+      </div>
+      <div class="search-container">
+        <form class="search-box">
+          <input type="text" class="search-text" placeholder="Search..." />
+          <button type="submit" class="search-button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
     </div>
     <hr id="hr1" />
     <ul class="menu">
-        <li><a href="docgi.html">Giới thiệu về chúng tôi</a></li>
-        <li><a href="tieuthuyet.html">Bảng xếp hạng </a></li>
-        <li><a href="trinhtham.html">Văn học Việt Nam</a></li>
-        <li><a href="anime.html">Văn học nước ngoài</a></li>
-        <li><a href="sachthieunhi.html">Nhà phê bình</a></li>
-      </ul>
-      <hr id="hr2">
-      <div id="slogan"><i>Những cuốn sách giúp ta mở rộng kiến thức, nuôi dưỡng trí tưởng tương và phát triển tư duy.<br> Sách dẫn ta đến những chân trời mới mà ta chưa được biết...</i></div>
-      <div>
-      <a id="a1" href="gioithieuvechungtoi"><h1 id="gtvct">1.Giới thiệu về chúng tôi</h1></a>
-        <div id="p1">
-        <div id="gt">Đây là một trang web lập ra với mục đích khơi gợi niềm hứng thú đọc sách đối với các bạn trẻ Trần Phú. Nối tiếp chặng đường của The Books Glow, Book in the world là một Câu Lạc Bộ 4.0 giúp các bạn có thể dễ dàng tìm thấy những cuốn sách thú vị, đúng "gu", đắm chìm trong thế giới tưởng tượng của chính mình.</div>
+      <li><a href="docgi.html">Giới thiệu về chúng tôi</a></li>
+      <li><a href="tieuthuyet.html">Bảng xếp hạng </a></li>
+      <li><a href="trinhtham.html">Văn học Việt Nam</a></li>
+      <li><a href="anime.html">Văn học nước ngoài</a></li>
+      <li><a href="sachthieunhi.html">Nhà phê bình</a></li>
+    </ul>
+    <hr id="hr2" />
+    <div id="slogan">
+      <i
+        >Những cuốn sách giúp ta mở rộng kiến thức, nuôi dưỡng trí tưởng tương
+        và phát triển tư duy.<br />
+        Sách dẫn ta đến những chân trời mới mà ta chưa được biết...</i
+      >
+    </div>
+    <div>
+      <a id="a1" href="gioithieuvechungtoi"
+        ><h1 id="gtvct">1.Giới thiệu về chúng tôi</h1></a
+      >
+      <div id="p1">
+        <div id="gt">
+          Đây là một trang web lập ra với mục đích khơi gợi niềm hứng thú đọc
+          sách đối với các bạn trẻ Trần Phú. Nối tiếp chặng đường của The Books
+          Glow, Book in the world là một Câu Lạc Bộ 4.0 giúp các bạn có thể dễ
+          dàng tìm thấy những cuốn sách thú vị, đúng "gu", đắm chìm trong thế
+          giới tưởng tượng của chính mình.
         </div>
       </div>
-      <div id="2">
-<div id="21">
-  <a href="" id="a2"><h1 id="h2">2. Một số bài đánh giá</h1></a>
-<div id="dong1">
-    <div id="nd1">Ngôi nhà bên bờ biển xanh thẳm là một cuốn sách nhẹ nhàng và ngọt ngào, chứa đựng những bài học đời thường mà đôi khi con người quên mất. Rằng những điều bất ngờ nhất, phù hợp nhất sẽ vô tình xuất hiện khi bạn không mong chờ nhất.
-
-      “Nhà không phải lúc nào cũng là ngôi nhà nơi ta sống. Đó còn là những người chúng ta lựa chọn để ở bên…”</div>
-  <image src="https://pibook.vn/upload/notice/review-sach-ngoi-nha-ben-bo-bien-xanh-tham-ins-im.jpg" id="anh1" alt="ảnh lỗi"></image>
-</div>
-</div>
-<div id="dong2">
-<div id="nd2">“Đây là một trong những câu chuyện sẽ ở lại trong tâm trí bạn nhiều năm nữa. Những chủ đề văn học và nhân sinh đã tạo nên một cấu trúc tiểu thuyết tuyệt vời: tình yêu, danh dự, tội lỗi, sợ hãi và cứu chuộc. Cuốn sách tràn đầy sức mạnh, tới nỗi trong suốt cả một quãng thời gian dài sau đó những gì tôi đọc dường như đều nhạt nhẽo.” - Isabel Alende –</div>
-<image src="https://upload.wikimedia.org/wikipedia/vi/6/6e/Nguoiduadieu.jpg" id="anh2" alt="ảnh lỗi"></image>
-</div>
+    </div>
+    <div id="2">
+      <div id="21">
+        <a href="" id="a2"><h1 id="h2">2. Một số bài đánh giá</h1></a>
+        <div id="dong1">
+          <div id="nd1">
+            Ngôi nhà bên bờ biển xanh thẳm là một cuốn sách nhẹ nhàng và ngọt
+            ngào, chứa đựng những bài học đời thường mà đôi khi con người quên
+            mất. Rằng những điều bất ngờ nhất, phù hợp nhất sẽ vô tình xuất hiện
+            khi bạn không mong chờ nhất. “Nhà không phải lúc nào cũng là ngôi
+            nhà nơi ta sống. Đó còn là những người chúng ta lựa chọn để ở bên…”
+          </div>
+          <image
+            src="https://pibook.vn/upload/notice/review-sach-ngoi-nha-ben-bo-bien-xanh-tham-ins-im.jpg"
+            id="anh1"
+            alt="ảnh lỗi"
+          ></image>
+        </div>
       </div>
-      <div id="3"><a href="" id="a3"><h1 id="h3">3.Bảng xếp hạng</h1></a>
+      <div id="dong2">
+        <div id="nd2">
+          “Đây là một trong những câu chuyện sẽ ở lại trong tâm trí bạn nhiều
+          năm nữa. Những chủ đề văn học và nhân sinh đã tạo nên một cấu trúc
+          tiểu thuyết tuyệt vời: tình yêu, danh dự, tội lỗi, sợ hãi và cứu
+          chuộc. Cuốn sách tràn đầy sức mạnh, tới nỗi trong suốt cả một quãng
+          thời gian dài sau đó những gì tôi đọc dường như đều nhạt nhẽo.” -
+          Isabel Alende
+        </div>
+        <image
+          src="https://upload.wikimedia.org/wikipedia/vi/6/6e/Nguoiduadieu.jpg"
+          id="anh2"
+          alt="ảnh lỗi"
+        ></image>
+      </div>
+    </div>
+    <div id="3">
+      <a href="" id="a3"><h1 id="h3">3.Bảng xếp hạng</h1></a>
       <div id="bxh">
         <div id="bxh1">
-  <h1 id="hbxh">TOP những cuốn tiểu thuyết hay nhất thời đại</h1>
-  <ol id="libxh">
-  <li>Anna Karenina - Lev Nikolayevich Tolstoy</li>
-  <li>Lolita - Vladimir Nabokov</li>
-  <li>Đại Gia Gatsby - F.Scott Fitzgerald</li>
-  <li>Nhà Thờ Đức Bà Paris - Victor Hugo</li>
-  <li>Tiếng Chim Hót Trong Bụi Mận Gai - Colleen McCullough</li>
-  </ol>
-  </div>
-  <div id="bxh2">
-    <h1 id="hbxh">TOP cuốn sách văn học Việt Nam kinh điển nhất</h1>
-    <ol id="libxh">
-    <li>Chí Phèo - Nam Cao</li>
-    <li>Số Đỏ - Vũ Trọng Phụng</li>
-    <li>Truyện Kiều - Nguyễn Du</li>
-    <li>Cánh đồng bất tận - Nguyễn Ngọc Tư</li>
-    <li>Vang bóng một thời - Nguyễn Tuân</li>
-    </ol>
+          <h1 id="hbxh">TOP những cuốn tiểu thuyết hay nhất thời đại</h1>
+          <ol id="libxh">
+            <li>Anna Karenina - Lev Nikolayevich Tolstoy</li>
+            <li>Lolita - Vladimir Nabokov</li>
+            <li>Đại Gia Gatsby - F.Scott Fitzgerald</li>
+            <li>Nhà Thờ Đức Bà Paris - Victor Hugo</li>
+            <li>Tiếng Chim Hót Trong Bụi Mận Gai - Colleen McCullough</li>
+          </ol>
+        </div>
+        <div id="bxh2">
+          <h1 id="hbxh">TOP cuốn sách văn học Việt Nam kinh điển nhất</h1>
+          <ol id="libxh">
+            <li>Chí Phèo - Nam Cao</li>
+            <li>Số Đỏ - Vũ Trọng Phụng</li>
+            <li>Truyện Kiều - Nguyễn Du</li>
+            <li>Cánh đồng bất tận - Nguyễn Ngọc Tư</li>
+            <li>Vang bóng một thời - Nguyễn Tuân</li>
+          </ol>
+        </div>
+      </div>
     </div>
-      </div>
-      </div>
-<div id="4">
-  <form action="#" method="post">
-   <div id="gianhap"> <button type="submit">Gửi đơn</button></div>
-  </form>
-</div>
-<div id="5">Bài làm của Tấn Vinh và Ý Nhi</div>
+    <div id="4">
+      <form action="#" method="post">
+        <div id="gianhap"><button type="submit">Gửi đơn</button></div>
+      </form>
+    </div>
+    <div id="5">Bài làm của Tấn Vinh và Ý Nhi</div>
   </body>
 </html>
