@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      @import "style.css";
+    </style>
+  </head>
+  <body>
+    <!-- PHẦN HEADER -->
+    <div id="Modau">
+      <div id="Tieude">
+        <div id="Logo">
+          <a href="index.html" id="a0"><h1 id="h1_1">Book in The World</h1></a>
+        </div>
+        <div id="date-time"></div>
+        <script>
+          function updateDateTime() {
+            let now = new Date();
+            let daysOfWeek = [
+              "Chủ Nhật",
+              "Thứ Hai",
+              "Thứ Ba",
+              "Thứ Tư",
+              "Thứ Năm",
+              "Thứ Sáu",
+              "Thứ Bảy",
+            ];
+            let dayOfWeek = daysOfWeek[now.getDay()];
+            let day = now.getDate().toString().padStart(2, "0");
+            let month = (now.getMonth() + 1).toString().padStart(2, "0");
+            let year = now.getFullYear();
+            document.getElementById(
+              "date-time"
+            ).innerText = `${dayOfWeek}, ${day}/${month}/${year}`;
+          }
+          setInterval(updateDateTime, 1000);
+          updateDateTime();
+        </script>
+      </div>
+
+      <div class="search-container">
+        <form class="search-box">
+          <input type="text" class="search-text" placeholder="Search..." />
+          <button type="submit" class="search-button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- thư mục -->
+    <ul class="menu">
+      <li><a href="">Giới thiệu về chúng tôi</a></li>
+      <li><a href="vanhocvietnam.html">Văn học Việt Nam</a></li>
+      <li><a href="vanhocnuocngoai.html">Văn học nước ngoài</a></li>
+      <li><a href="">Nhà phê bình</a></li>
+    </ul>
+
+    <hr class="hr2" />
+
+    <div id="nttd">
+      <h1 style="font-size: 50px">Đại gia Gatsby</h1>
+      <img
+        src="https://bizweb.dktcdn.net/thumb/1024x1024/100/363/455/products/dai-gia-gatsby-new-bia-mem-01.jpg?v=1696407622907"
+        alt="dgg"
+      />
+    </div>
+    <div id="ntperiod1">
+      "Gatsby đã tin vào đốm sáng xanh ấy, vào cái tương lai mê đắm đến cực điểm
+      đang rời xa trước mắt chúng ta năm này qua năm khác. Ừ thì nó đã tuột khỏi
+      tay chúng ta, nhưng có làm sao đâu – ngày mai chúng ta sẽ lại chạy nhanh
+      hơn, vươn tay ra xa hơn…”
+      <br /><br />Là bức chân dung của “Thời đại Jazz” (Jazz Age, cái tên do
+      chính Fitzgerald đặt cho thời kỳ 1918 - 1929), đại gia Gatsby nắm bắt vô
+      cùng sâu sắc tinh thần của thế hệ cùng thời ông: những ám ảnh thường trực
+      về thành đạt, tiền bạc, sang trọng, dư dật, hào nhoáng; song đồng thời là
+      nỗi âu lo trước thói sùng bái vật chất vô độ và sự thiếu vắng đạo đức đang
+      ngày một lên ngôi. Phất lên nhanh chóng từ chỗ “hàn vi”, Gatsby, nhân vật
+      chính của câu chuyện, những tưởng sẽ có tất cả - tiền bạc, quyền lực, và
+      sau rốt là tình yêu -, nhưng rồi ảo tưởng tình yêu đó tan vỡ thật đau đớn,
+      theo sau là cái chết tức tưởi của Gatsby, để cuối cùng lập tức bị người
+      đời quên lãng. Là lời cảnh tỉnh để đời của Scott Fitzgerald về cái gọi là
+      “Giấc mơ Mỹ”, Đại gia Gatsby được ví như một tượng đài văn học, một cánh
+      cửa cần mở ra cho những ai quan tâm tới văn học và lịch sử tinh thần nước
+      Mỹ thời hiện đai. <br />Đại gia Gatsby (The Great Gatsby) từ lâu đã được
+      đưa vào giảng dạy trong trường phổ thông và đại học ở nhiều nước trên thế
+      giới. Cuốn tiểu thuyết “khác thường, tuyệt đẹp, cấu trúc phức tạp song
+      trên hết là giản dị” (như lời chính nhà văn) đứng thứ hai trong danh sách
+      100 tiểu thuyết hay nhất thế kỷ 20 của Modern Library, và nằm trong danh
+      sách 100 tiểu thuyết hay nhất bằng tiếng Anh từ 1923 đến 2005 do tạp chí
+      Time bình chọn.
+    </div>
+  </body>
+</html>

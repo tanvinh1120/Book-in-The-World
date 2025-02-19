@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <style>
+    @import "style.css";
+  </style>
+</head>
+<body>
+   
+      <!-- PHẦN HEADER -->
+      <div id="Modau">
+        <div id="Tieude">
+          <div id="Logo">
+            <a href="index.html" id="a0"><h1 id="h1_1">Book in The World</h1></a>
+          </div>
+          <div id="date-time"></div>
+          <script>
+            function updateDateTime() {
+              let now = new Date();
+              let daysOfWeek = [
+                "Chủ Nhật",
+                "Thứ Hai",
+                "Thứ Ba",
+                "Thứ Tư",
+                "Thứ Năm",
+                "Thứ Sáu",
+                "Thứ Bảy",
+              ];
+              let dayOfWeek = daysOfWeek[now.getDay()];
+              let day = now.getDate().toString().padStart(2, "0");
+              let month = (now.getMonth() + 1).toString().padStart(2, "0");
+              let year = now.getFullYear();
+              document.getElementById(
+                "date-time"
+              ).innerText = `${dayOfWeek}, ${day}/${month}/${year}`;
+            }
+            setInterval(updateDateTime, 1000);
+            updateDateTime();
+          </script>
+        </div>
+        
+  
+        <div class="search-container">
+          <form class="search-box">
+            <input type="text" class="search-text" placeholder="Search..." />
+            <button type="submit" class="search-button">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+  
+  
+  
+     <!-- thư mục -->
+      <ul class="menu">
+        <li><a href="">Giới thiệu về chúng tôi</a></li>
+        <li><a href="vanhocvietnam.html">Văn học Việt Nam</a></li>
+        <li><a href="vanhocnuocngoai.html">Văn học nước ngoài</a></li>
+        <li><a href="">Nhà phê bình</a></li>
+      </ul>
+  
+      <hr class="hr2" />
+      <div id="vnperiod1">
+        <!-- Vang bóng một thời -->
+        <div id="vbmt">
+<a href="vangbongmotthoi.html">     
+                <img style="width:300px;" src="https://bizweb.dktcdn.net/thumb/1024x1024/100/363/455/products/vangbongmotthoinew01.jpg?v=1710306291303" alt="vbmt">
+</a>
+<p id="vnp1">VĂN HỌC VIỆT NAM</p>
+<p ><a id="vnp1a" href="vangbongmotthoi.html" >Vang bóng một thời</a></p></div>
+<!-- Số đỏ -->
+<div id="sd">
+    <a href="sodo.html">
+                    <img style="width:300px;" src="https://product.hstatic.net/200000017360/product/bia_sodo3-b1_b32d805ef78846fab8d0d6c1c7fc887b_master.jpg" alt="sd">
+    </a>
+    <p id="vnp1">VĂN HỌC VIỆT NAM</p>
+    <p ><a id="vnp1a" href="sodo.html" >Số đỏ</a></p></div>
+<!-- Cánh đồng bất tận -->
+<div id="cdbt">
+    <a href="canhdongbattan.html">
+                    <img style="width:300px;" src="https://www.nxbtre.com.vn/Images/Book/nxbtre_full_22592021_045917.jpg" alt="cdbt">
+    </a>
+    <p id="vnp1">VĂN HỌC VIỆT NAM</p>
+    <p ><a id="vnp1a" href="canhdongbattan.html" >Cánh đồng bất tận</a></p>
+        </div>
+      </div>
+</body>
+</html>

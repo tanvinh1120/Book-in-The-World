@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      @import "style.css";
+    </style>
+  </head>
+  <body>
+    <!-- PHẦN HEADER -->
+    <div id="Modau">
+      <div id="Tieude">
+        <div id="Logo">
+          <a href="index.html" id="a0"><h1 id="h1_1">Book in The World</h1></a>
+        </div>
+        <div id="date-time"></div>
+        <script>
+          function updateDateTime() {
+            let now = new Date();
+            let daysOfWeek = [
+              "Chủ Nhật",
+              "Thứ Hai",
+              "Thứ Ba",
+              "Thứ Tư",
+              "Thứ Năm",
+              "Thứ Sáu",
+              "Thứ Bảy",
+            ];
+            let dayOfWeek = daysOfWeek[now.getDay()];
+            let day = now.getDate().toString().padStart(2, "0");
+            let month = (now.getMonth() + 1).toString().padStart(2, "0");
+            let year = now.getFullYear();
+            document.getElementById(
+              "date-time"
+            ).innerText = `${dayOfWeek}, ${day}/${month}/${year}`;
+          }
+          setInterval(updateDateTime, 1000);
+          updateDateTime();
+        </script>
+      </div>
+
+      <div class="search-container">
+        <form class="search-box">
+          <input type="text" class="search-text" placeholder="Search..." />
+          <button type="submit" class="search-button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- thư mục -->
+    <ul class="menu">
+      <li><a href="">Giới thiệu về chúng tôi</a></li>
+      <li><a href="vanhocvietnam.html">Văn học Việt Nam</a></li>
+      <li><a href="vanhocnuocngoai.html">Văn học nước ngoài</a></li>
+      <li><a href="">Nhà phê bình</a></li>
+    </ul>
+
+    <hr class="hr2" />
+ 
+   <div id="nttd">
+        <h1 style="font-size: 50px;" >Vang bóng một thời</h1>
+        <img
+          src="https://bizweb.dktcdn.net/thumb/1024x1024/100/363/455/products/vangbongmotthoinew01.jpg?v=1710306291303"
+          alt="vbmt"
+        />
+   </div>
+   <div id="ntperiod1">
+<div>Vang bóng một thời của nhà văn Nguyễn Tuân, được xuất bản năm 1940. Tập truyện xoay quanh chủ đề về những giá trị văn hóa truyền thống của Việt Nam đang dần bị mai một trước sự xâm lăng của văn hóa phương Tây.</div>
+<br><div>Tác phẩm thể hiện sự nuối tiếc cho những giá trị truyền thống như: nghệ thuật chơi chữ, nghệ thuật làm đèn lồng, ca trù, thư pháp,… đang dần bị mai một. Nguyễn Tuân cũng dành trân trọng cho những con người tài hoa, khí phách, sống một cuộc đời thanh cao như: Bạch Liên, Hiệp khách Sài Gòn,… Đồng thời tác giả đã phê phán gay gắt đối với xã hội đương thời, với những con người sống giả dối, lố bịch.</div>
+<br><div>Vang bóng một thời giúp chúng ta hiểu thêm về những giá trị văn hóa truyền thống của Việt Nam, khơi gợi niềm tự hào về lịch sử và bản sắc dân tộc cũng như trân trọng những con người tài hoa.</div>
+</div>
+  </body>
+</html>
