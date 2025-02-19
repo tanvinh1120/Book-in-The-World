@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>@import "style.css";
+
+
+    </style>
+</head>
+<body>
+     <!-- PHẦN HEADER -->
+     <div id="Modau">
+        <div id="Tieude">
+          <div id="Logo">
+            <a href="index.html" id="a0"><h1 id="h1_1">Book in The World</h1></a>
+          </div>
+          <div id="date-time"></div>
+          <script>
+            function updateDateTime() {
+              let now = new Date();
+              let daysOfWeek = [
+                "Chủ Nhật",
+                "Thứ Hai",
+                "Thứ Ba",
+                "Thứ Tư",
+                "Thứ Năm",
+                "Thứ Sáu",
+                "Thứ Bảy",
+              ];
+              let dayOfWeek = daysOfWeek[now.getDay()];
+              let day = now.getDate().toString().padStart(2, "0");
+              let month = (now.getMonth() + 1).toString().padStart(2, "0");
+              let year = now.getFullYear();
+              document.getElementById(
+                "date-time"
+              ).innerText = `${dayOfWeek}, ${day}/${month}/${year}`;
+            }
+            setInterval(updateDateTime, 1000);
+            updateDateTime();
+          </script>
+        </div>
+  
+        <div class="search-container">
+          <form class="search-box">
+            <input type="text" class="search-text" placeholder="Search..." />
+            <button type="submit" class="search-button">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+  
+  
+  
+     <!-- thư mục -->
+      <ul class="menu">
+        <li><a href="">Giới thiệu về chúng tôi</a></li>
+        <li><a href="vanhocvietnam.html">Văn học Việt Nam</a></li>
+        <li><a href="vanhocnuocngoai.html">Văn học nước ngoài</a></li>
+        <li><a href="">Nhà phê bình</a></li>
+      </ul>
+  
+      <hr class="hr2" />
+     <div style="display: flex;
+     justify-content: center;"
+     height: 60vh;
+     >
+          <div class="container">
+            <h1 style="color:aliceblue">Đơn xét duyệt vào câu lạc bộ</h1>
+            <form action="index.html" method="get">
+                <div class="form-group">
+                    <label for="fullname">Họ và tên:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="dob">Ngày tháng năm sinh:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="gender">Giới tính:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="male">Nam</option>
+                        <option value="female">Nữ</option>
+                        <option value="other">Khác</option>
+                    </select>
+                </div>
+    
+                <div class="form-group">
+                    <label for="phone">Số điện thoại:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="address">Địa chỉ:</label>
+                    <textarea id="address" name="address" rows="4" required></textarea>
+                </div>
+    
+                <div class="form-group">
+                   <button type="submit">Gửi đơn</button>
+                </div>
+            </form>
+        </div>
+     </div>
+</body>
+</html>
