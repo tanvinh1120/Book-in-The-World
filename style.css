@@ -1,7 +1,5 @@
 body {
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
+
   background-color: rgb(255, 243, 214);
 }
 #date-time {
@@ -12,7 +10,7 @@ body {
 #h1_1 {
   font-family: fantasy;
   text-align: left;
-  text-indent: 5px;
+  text-indent: 35px;
   width: auto;
   font-size: 40px;
   padding: 0px 20px 5px 10px;
@@ -72,16 +70,17 @@ body {
 }
 .menu li {
   font-size: 30px;
-  margin: 0px 7px 0px 7px;
+  margin: 0px 15px 0px 5px;
   text-align: center;
   color: black;
+  font-weight: 600;
 }
 .menu li a {
   text-decoration: none;
   color: black;
 }
 .menu li a:hover {
-  color: rgb(10, 26, 171);
+  color: rgba(226, 196, 61, 0.801);
   text-decoration: underline;
 }
 #hr2 {
@@ -95,53 +94,70 @@ body {
   text-align: center;
   justify-content: center;
   align-items: center;
-  font-size: 30px;
-  padding: 10px 0px 0px 0px;
+  font-size: 35px;
+  padding: 30px 0px 0px 0px;
 }
 
+#noidung {display: flex;
+
+  max-width: 80%;
+  flex-direction: column;
+  margin: 10px auto;
+  padding: 20px;
+
+}
 #part1 {
   text-decoration: none;
   color: black;
 }
 #part1:hover {
   text-decoration: underline;
-  color: darkblue;
+  color: rgba(226, 196, 61, 0.801);
 }
 #item1 {
   padding: 10px 0px 10px 20px;
+  font-size: 40px;
 }
 #period1 {
   display: flex;
   margin: 0 auto;
+  justify-content: center;
   align-items: center;
-  background-color: rgb(243, 237, 182);
-  width: 50%;
+  height: 1000px;
+  background-image: url("anhthuvien.jpg");
+
   padding: 15px;
-  border-radius: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 #content1 {
-  font-size: 30px;
+  font-size: 150px;
   text-align: justify;
+  color: aliceblue;
 }
-
+#intro {font-size: 30px;
+  text-align: justify;
+  padding:0px 50px 0px 50px;
+}
 #part2 {
   text-decoration: none;
   color: black;
 }
 #part2:hover {
   text-decoration: underline;
-  color: darkblue;
+  color: rgba(226, 196, 61, 0.801);
 }
 #item2 {
   padding: 10px 0px 10px 20px;
+  font-size: 40px;
+}
+#period20{    position: relative;
+  width: 100%;
 }
 #period2a {
   display: flex;
   justify-content: center;
   align-items: center;
   max-width: 50%;
-  margin: 10px auto;
+  margin-left: 10px auto;
   padding: 20px;
   background-color: #fdf6e3;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -156,8 +172,12 @@ body {
   text-align: justify;
   padding: 10px 20px 10px 20px;
 }
+#period2b0{display:flex;
+flex:2}
+#not{flex:1;}
 #period2b {
   display: flex;
+  flex:1;
   justify-content: center;
   align-items: center;
   max-width: 50%;
@@ -177,48 +197,187 @@ body {
   padding: 10px 20px 10px 20px;
 }
 
-#part3 {
-  text-decoration: none;
-  color: black;
-}
-#part3:hover {
-  text-decoration: underline;
-  color: darkblue;
-}
-#item3 {
-  padding: 10px 0px 10px 20px;
-}
-#ranking {
+#join{display:inline-flex;
+background-color: gold;
+margin: 0 auto;
+text-align: center;}
+#thamgia{font-size: 30px;justify-content: center;
+  align-items: center; margin:0 auto;}
+#end {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  background-color: blue;
+  margin: 10 auto;
+  justify-content: center;
+  align-items: center;
 }
-#rankinga {
-  background-color: antiquewhite;
-  border-radius: 25px;
+#endp {
+  font-size: 30px;
+  text-align: center;
 }
-#rankingb {
-  background-color: antiquewhite;
-  border-radius: 25px;
+#wop1{  font-weight: bold;
+  color: gray;
+  margin-top: 10px;
+  font-family: Courier;
+  font-size: small;
+  line-height: 0.22;}
+#wop1a{text-decoration: none;
+color:black;
+font-size: 25px;
+}
+#wop1a:hover{text-decoration: underline;
+color:rgba(226, 196, 61, 0.801);
+}
+#ntperiod1{text-align:justify;
+width:70%;
+margin:0 auto;
+font-size: 30px;
+padding:20px 0px 0px 0px;}
+#nttd{text-align: center;}
+#woperiod1 {
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-around; 
+  gap: 20px;
+  padding: 10px;
 }
 
-#btn {
+#woperiod1 div {
+  flex: 1;
+  max-width: 300px; 
+}
+#vnperiod1 {
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-around; 
+  gap: 20px;
+  padding: 10px;
+}
+
+#vnperiod1 div {
+  flex: 1;
+  max-width: 300px; 
+}
+#vnp1{  font-weight: bold;
+  color: gray;
+  margin-top: 10px;
+  font-family: Courier;
+  font-size: small;
+  line-height: 0.22;}
+#vnp1a{text-decoration: none;
+color:black;
+font-size: 25px;
+}
+#vnp1a:hover{text-decoration: underline;
+color:rgba(226, 196, 61, 0.801);
+}
+#joincha{padding:0px 0px 20px 0px;
+text-align: center;}
+.join-btn {
+  background: linear-gradient(135deg, #ee9e0a, #f3d31d);
+  border: none;
+  border-radius: 12px;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.join-btn:hover {
+  background: linear-gradient(135deg, #f1a009, #eec408);
+  transform: scale(1.05);
+}
+
+.join-btn:active {
+  transform: scale(1);
+}
+
+
+.container {
+  background-color: #af8a0f88;
+  padding: 5px 25px 5px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgb(0, 0, 0,);
+  width: 100%;
+  max-width: 500px;
+  animation: fadeIn 1s ease-in-out;
+
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #000000;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+  width: 100%;
+  padding: 10px 0px;
+  border: 2px solid #5a3e02;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  background-color: #5a3e02;
+  color:white
+}
+
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+  border-color: #e4b20e;
+  outline: none;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-group button {
   width: 100%;
   padding: 12px;
+  background: linear-gradient(135deg, #ee9e0a, #f3d31d);
   border: none;
   border-radius: 8px;
   color: #fff;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-  transition: 0.3s ease, transform 0.2s ease;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
-#end{display:flex;
-  background-color: blue;
-margin:10 auto;
-justify-content: center;
-align-items:center ;}
-#endp{font-size: 30px;
-text-align: center;
+
+.form-group button:hover {
+  background: linear-gradient(135deg, #eec408, #f1a009);
+  transform: translateY(-2px);
+}
+
+.form-group button:active {
+  transform: translateY(0);
 }
 
