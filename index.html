@@ -11,12 +11,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
     <style>
-      @import "style2.css";
+      @import "style.css";
     </style>
   </head>
   <body>
+    <!-- PHẦN HEADER -->
     <div id="Modau">
       <div id="Tieude">
         <div id="Logo">
@@ -35,21 +35,19 @@
               "Thứ Sáu",
               "Thứ Bảy",
             ];
-
-            let dayOfWeek = daysOfWeek[now.getDay()]; // Lấy thứ hiện tại
+            let dayOfWeek = daysOfWeek[now.getDay()];
             let day = now.getDate().toString().padStart(2, "0");
             let month = (now.getMonth() + 1).toString().padStart(2, "0");
             let year = now.getFullYear();
-
             document.getElementById(
               "date-time"
-            ).innerText = `${dayOfWeek}, ${day}/${month}/${year} `;
+            ).innerText = `${dayOfWeek}, ${day}/${month}/${year}`;
           }
-
           setInterval(updateDateTime, 1000);
           updateDateTime();
         </script>
       </div>
+
       <div class="search-container">
         <form class="search-box">
           <input type="text" class="search-text" placeholder="Search..." />
@@ -59,84 +57,96 @@
         </form>
       </div>
     </div>
-    <hr id="hr1" />
+
+
+
+   <!-- thư mục -->
     <ul class="menu">
-      <li><a href="docgi.html">Giới thiệu về chúng tôi</a></li>
-      <li><a href="tieuthuyet.html">Bảng xếp hạng </a></li>
-      <li><a href="trinhtham.html">Văn học Việt Nam</a></li>
-      <li><a href="anime.html">Văn học nước ngoài</a></li>
-      <li><a href="sachthieunhi.html">Nhà phê bình</a></li>
+      <li><a href="">Giới thiệu về chúng tôi</a></li>
+      <li><a href="">Bảng xếp hạng</a></li>
+      <li><a href="">Văn học Việt Nam</a></li>
+      <li><a href="">Văn học nước ngoài</a></li>
+      <li><a href="">Nhà phê bình</a></li>
     </ul>
-    <hr id="hr2" />
+
+    <hr class="hr2" />
+
+    <!-- slogan -->
     <div id="slogan">
       <i
-        >Những cuốn sách giúp ta mở rộng kiến thức, nuôi dưỡng trí tưởng tương
+        >Những cuốn sách giúp ta mở rộng kiến thức, nuôi dưỡng trí tưởng tượng
         và phát triển tư duy.<br />
         Sách dẫn ta đến những chân trời mới mà ta chưa được biết...</i
       >
     </div>
+
+    <!-- giới thiệu -->
     <div>
-      <a id="a1" href=""><h1 id="gtvct">1.Giới thiệu về chúng tôi</h1></a>
-      <div id="p1">
-        <div id="gt">
-          Đây là một trang web lập ra với mục đích khơi gợi niềm hứng thú đọc
-          sách đối với các bạn trẻ Trần Phú. Nối tiếp chặng đường của The Books
-          Glow, Book in the world là một Câu Lạc Bộ 4.0 giúp các bạn có thể dễ
-          dàng tìm thấy những cuốn sách thú vị, đúng "gu", đắm chìm trong thế
-          giới tưởng tượng của chính mình.
-        </div>
-      </div>
+
+      <a id="part1" href=""><h1 id="item1">1.Giới thiệu về chúng tôi</h1></a></div>
+
+       <div id="period1">
+          <div id="content1">
+            Đây là một trang web lập ra với mục đích khơi gợi niềm hứng thú đọc
+             sách đối với các bạn trẻ Trần Phú. Nối tiếp chặng đường của The Books Glow, 
+             Book in the world là một Câu Lạc Bộ 4.0 giúp các bạn có thể dễ dàng tìm thấy 
+             những cuốn sách thú vị, đúng "gu", đắm chìm trong thế giới tưởng tượng của chính mình.
+          </div>
+       </div>
     </div>
-    <div id="2">
-      <div id="21">
-        <a href="" id="a2"><h1 id="h2">2. Một số bài đánh giá</h1></a>
-        <div id="dong1">
-          <div id="nd1">
+
+    <!-- một số bài đánh giá -->
+    <div>
+  
+        <a href="" id="part2"><h1 id="item2">2. Một số bài đánh giá</h1></a>
+        <div id="period2a">
+          <div id="conten2a">
             Ngôi nhà bên bờ biển xanh thẳm là một cuốn sách nhẹ nhàng và ngọt
-            ngào, chứa đựng những bài học đời thường mà đôi khi con người quên
-            mất. Rằng những điều bất ngờ nhất, phù hợp nhất sẽ vô tình xuất hiện
-            khi bạn không mong chờ nhất. “Nhà không phải lúc nào cũng là ngôi
-            nhà nơi ta sống. Đó còn là những người chúng ta lựa chọn để ở bên…”
+            ngào, chứa đựng những bài học đời thường. <br />
+            “Nhà không phải lúc nào cũng là ngôi nhà nơi ta sống. Đó còn là
+            những người chúng ta lựa chọn để ở bên…”
           </div>
           <img
-            src="https://pibook.vn/upload/notice/review-sach-ngoi-nha-ben-bo-bien-xanh-tham.jpg"
+            src="https://pibook.vn/upload/notice/review-sach-ngoi-nha-ben-bo-bien-xanh-tham-ins-im.jpg"
             alt="ảnh lỗi"
-            id="img1"
+            id="image2a"/>
+        </div>
+        </div>
+
+        <div id="period2b">
+          <div id="conten2b">
+            “Đây là một trong những câu chuyện sẽ ở lại trong tâm trí bạn nhiều
+            năm nữa. <br />
+            Cuốn sách tràn đầy sức mạnh, tới nỗi trong suốt một quãng thời gian
+            dài sau đó những gì tôi đọc dường như đều nhạt nhẽo.” - Isabel
+            Alende
+          </div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/vi/6/6e/Nguoiduadieu.jpg"
+            id="image2b"
+            alt="ảnh lỗi"
           />
         </div>
       </div>
-      <div id="dong2">
-        <div id="nd2">
-          “Đây là một trong những câu chuyện sẽ ở lại trong tâm trí bạn nhiều
-          năm nữa. Những chủ đề văn học và nhân sinh đã tạo nên một cấu trúc
-          tiểu thuyết tuyệt vời: tình yêu, danh dự, tội lỗi, sợ hãi và cứu
-          chuộc. Cuốn sách tràn đầy sức mạnh, tới nỗi trong suốt cả một quãng
-          thời gian dài sau đó những gì tôi đọc dường như đều nhạt nhẽo.” -
-          Isabel Alende
-        </div>
-        <image
-          src="https://upload.wikimedia.org/wikipedia/vi/6/6e/Nguoiduadieu.jpg"
-          id="anh2"
-          alt="ảnh lỗi"
-        ></image>
-      </div>
     </div>
+
+    <!-- bảng xếp hạng -->
     <div id="3">
-      <a href="" id="a3"><h1 id="h3">3.Bảng xếp hạng</h1></a>
-      <div id="bxh">
-        <div id="bxh1">
-          <h1 id="hbxh">TOP những cuốn tiểu thuyết hay nhất thời đại</h1>
-          <ol id="libxh">
-            <li>Anna Karenina - Lev Nikolayevich Tolstoy</li>
+      <a href="" id="part3"><h1 id="item3">3. Bảng xếp hạng</h1></a>
+      <div id="ranking">
+        <div id="rankinga">
+          <h2>TOP những cuốn tiểu thuyết hay nhất thời đại</h2>
+          <ol>
+            <li>Anna Karenina - Lev Tolstoy</li>
             <li>Lolita - Vladimir Nabokov</li>
-            <li>Đại Gia Gatsby - F.Scott Fitzgerald</li>
+            <li>Đại Gia Gatsby - F. Scott Fitzgerald</li>
             <li>Nhà Thờ Đức Bà Paris - Victor Hugo</li>
             <li>Tiếng Chim Hót Trong Bụi Mận Gai - Colleen McCullough</li>
           </ol>
         </div>
-        <div id="bxh2">
-          <h1 id="hbxh">TOP cuốn sách văn học Việt Nam kinh điển nhất</h1>
-          <ol id="libxh">
+        <div id="rankingb ">
+          <h2>TOP cuốn sách văn học Việt Nam kinh điển nhất</h2>
+          <ol>
             <li>Chí Phèo - Nam Cao</li>
             <li>Số Đỏ - Vũ Trọng Phụng</li>
             <li>Truyện Kiều - Nguyễn Du</li>
@@ -146,16 +156,21 @@
         </div>
       </div>
     </div>
-    <div id="4">
+
+    <!-- FORM ĐĂNG KÝ -->
+    <div id="part4">
+
       <form action="#" method="post">
 <div id="join">
-  <a href="bieumau.html">
-           <button type="submit">Gửi đơn</button>
-    
+  <a href="dangky.html">
+<p id="btn"><btton>tham gia</btton></p>
   </a>
 </div>      
 </form>
     </div>
-    <div id="5">Bài làm của Tấn Vinh và Ý Nhi</div>
+    <!-- kết -->
+    <div id="end">
+      <p id="endp">Bài làm của Tấn Vinh và Ý Nhi. Mọi thắc mắc xin liên hệ:0964046497</p>
+    </div>
   </body>
 </html>
