@@ -64,12 +64,6 @@ body {
   cursor: pointer;
   padding: 8px;
 }
-#hr1 {
-  height: 3px;
-  background-color: rgb(175, 172, 163);
-  border: none;
-  width: 100vw;
-}
 /*phần mục lục*/
 .menu {
   list-style: none;
@@ -78,7 +72,7 @@ body {
 }
 .menu li {
   font-size: 30px;
-  margin: 0 7px;
+  margin: 0px 7px 0px 7px;
   text-align: center;
   color: black;
 }
@@ -94,127 +88,122 @@ body {
   background-color: black;
   border: none;
   height: 3px;
-  width: 100vw;
+  width: 100%;
 }
 
 #slogan {
   text-align: center;
   justify-content: center;
   align-items: center;
-  font-size: 25px;
+  font-size: 30px;
   padding: 10px 0px 0px 0px;
 }
 
-#a1 {
+#part1 {
   text-decoration: none;
   color: black;
 }
-#a1:hover {
+#part1:hover {
   text-decoration: underline;
   color: darkblue;
 }
-#gtvct {
+#item1 {
   padding: 10px 0px 10px 20px;
 }
-#p1 {
+#period1 {
   display: flex;
-  justify-content: center; /* Căn giữa theo chiều ngang */
+  margin: 0 auto;
+  align-items: center;
+  background-color: rgb(243, 237, 182);
+  width: 50%;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-
-#gt {
-  width: 50%; /* Để nó chỉ chiếm 50% chiều rộng */
+#content1 {
+  font-size: 30px;
   text-align: justify;
-  font-size: 25px;
-
 }
 
-#a2 {
+#part2 {
   text-decoration: none;
   color: black;
 }
-#a2:hover {
+#part2:hover {
   text-decoration: underline;
   color: darkblue;
 }
-#h2 {
+#item2 {
   padding: 10px 0px 10px 20px;
 }
-
-#img1 {
-  max-width: 400px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
-}
-#nd1 {
-  flex: 1;
-  font-size: 25px;
-
-  text-align: justify;
-  padding: 50 px;
-}
-
-#dong1 {
+#period2a {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  max-width: 80%;
-  margin: 30px auto;
+  max-width: 50%;
+  margin: 10px auto;
   padding: 20px;
   background-color: #fdf6e3;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-
-
-}
-#dong2 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 80%;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: #fdf6e3;
-  border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-#nd2 {
-  flex: 1;
-  font-size: 25px;
-
-  text-align: justify;
-  padding: 50 px;
-}
-#anh2 {
+#image2a {
   max-width: 400px;
-  border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-#a3 {
+#conten2a {
+  flex: 1;
+  font-size: 25px;
+  text-align: justify;
+  padding: 10px 20px 10px 20px;
+}
+#period2b {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+  margin: 10px auto;
+  padding: 20px;
+  background-color: #fdf6e3;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+#image2b {
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#conten2b {
+  flex: 1;
+  font-size: 25px;
+  text-align: justify;
+  padding: 10px 20px 10px 20px;
+}
+
+#part3 {
   text-decoration: none;
-  color: black; 
+  color: black;
 }
-#a3:hover {
+#part3:hover {
   text-decoration: underline;
   color: darkblue;
 }
-#h3 {
+#item3 {
   padding: 10px 0px 10px 20px;
 }
-#bxh1 {
-  background-color: rgb(255, 245, 152);
-  border-radius: 30px;
-}
-#bxh2 {
-  background-color: rgb(253, 235, 134);
-  border-radius: 30px;
-}
-#bxh {
+#ranking {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-#join{   width: 100%;
+#rankinga {
+  background-color: antiquewhite;
+  border-radius: 25px;
+}
+#rankingb {
+  background-color: antiquewhite;
+  border-radius: 25px;
+}
+
+#btn {
+  width: 100%;
   padding: 12px;
   border: none;
   border-radius: 8px;
@@ -222,5 +211,14 @@ body {
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-  transition: 0.3s ease, transform 0.2s ease;}
-  
+  transition: 0.3s ease, transform 0.2s ease;
+}
+#end{display:flex;
+  background-color: blue;
+margin:10 auto;
+justify-content: center;
+align-items:center ;}
+#endp{font-size: 30px;
+text-align: center;
+}
+
