@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>@import "style.css";
+
+
+    </style>
+</head>
+<body>
+     <!-- PHẦN HEADER -->
+     <div id="Modau">
+        <div id="Tieude">
+          <div>
+            <a href="index.html" id="a0"><h1 id="h1_1">Book in The World</h1></a>
+          </div>
+          <div id="date-time"></div>
+          <script>
+            function updateDateTime() {
+              let now = new Date();
+              let daysOfWeek = [
+                "Chủ Nhật",
+                "Thứ Hai",
+                "Thứ Ba",
+                "Thứ Tư",
+                "Thứ Năm",
+                "Thứ Sáu",
+                "Thứ Bảy",
+              ];
+              let dayOfWeek = daysOfWeek[now.getDay()];
+              let day = now.getDate().toString().padStart(2, "0");
+              let month = (now.getMonth() + 1).toString().padStart(2, "0");
+              let year = now.getFullYear();
+              document.getElementById(
+                "date-time"
+              ).innerText = `${dayOfWeek}, ${day}/${month}/${year}`;
+            }
+            setInterval(updateDateTime, 1000);
+            updateDateTime();
+          </script>
+        </div>
+  
+        <div id="search-container">
+          <form id="search-box">
+            <input type="text" id="search-text" placeholder="Search..." />
+            <button type="submit" id="search-button">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+  
+  
+  
+     <!-- thư mục -->
+      <ul id="menu">
+        <li><a href="index.html#item1">Giới thiệu về chúng tôi</a></li>
+        <li><a href="vanhocvietnam.html">Văn học Việt Nam</a></li>
+        <li><a href="vanhocnuocngoai.html">Văn học nước ngoài</a></li>
+        <li><a href="index.html#item1">Nhà phê bình</a></li>
+      </ul>
+  
+      <hr class="hr2" />
+     
+      <h1 style="text-align: center;
+      font-size: 100px;">Comming soon</h1>
+  <div style="justify-content: center; display:flex;">
+      <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2psODJjZ3J3aHd2bjNxZG5qNmNyczB4YWt4NXMyanBubjZzNzY5aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/tmQxSprev7vUkjJ5bs/giphy.gif" >  </div>
+      
+    </body>
+</html>
