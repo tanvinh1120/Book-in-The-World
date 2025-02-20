@@ -10,7 +10,104 @@
       integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
+    /><!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
+    <style>
+      @import "style.css";
+    </style>
+  </head>
+  <body>
+    <!-- PHẦN HEADER -->
+    <div id="Modau">
+      <div id="Tieude">
+        <div id="Logo">
+          <a href="index.html" id="a0"><h1 id="h1_1">Book in The World</h1></a>
+        </div>
+        <div id="date-time"></div>
+        <script>
+          function updateDateTime() {
+            let now = new Date();
+            let daysOfWeek = [
+              "Chủ Nhật",
+              "Thứ Hai",
+              "Thứ Ba",
+              "Thứ Tư",
+              "Thứ Năm",
+              "Thứ Sáu",
+              "Thứ Bảy",
+            ];
+            let dayOfWeek = daysOfWeek[now.getDay()];
+            let day = now.getDate().toString().padStart(2, "0");
+            let month = (now.getMonth() + 1).toString().padStart(2, "0");
+            let year = now.getFullYear();
+            document.getElementById(
+              "date-time"
+            ).innerText = `${dayOfWeek}, ${day}/${month}/${year}`;
+          }
+          setInterval(updateDateTime, 1000);
+          updateDateTime();
+        </script>
+      </div>
+
+      <div id="search-container">
+        <form id="search-box">
+          <input type="text" id="search-text" placeholder="Search..." />
+          <button type="submit" id="search-button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- thư mục -->
+    <ul id="menu">
+      <li><a href="index.html#item1">Giới thiệu về chúng tôi</a></li>
+      <li><a href="vanhocvietnam.html">Văn học Việt Nam</a></li>
+      <li><a href="vanhocnuocngoai.html">Văn học nước ngoài</a></li>
+      <li><a href="cms.html">Nhà phê bình</a></li>
+    </ul>
+
+    <hr id="hr2" />
+ 
+   <div id="nttd">
+        <h1 style="font-size: 50px;" >Nhà thờ đức bà Paris</h1>
+        <img
+          src="https://bizweb.dktcdn.net/100/180/408/products/nha-tho-duc-ba-paris-bia-cung-jpeg.jpg?v=1658471290847"
+          alt="ntdpp"
+        />
+   </div>
+   <div id="ntperiod1">
+      <div>Quanh cái “nhân vật chính” là nhà thờ Đức Bà, một xã hội Paris thời Trung cổ đã được tái hiện với tất cả những gì rạng rỡ nhất và suy đồi nhất của nó, không bỏ sót tầng lớp nào từ vua chúa đến thường dân và cả những kẻ dưới đáy xã hội. Trên nền “Lễ hội của những kẻ điên”, bánh xe số phận đã xoay vần, để các cuộc gặp gỡ định mệnh xảy đến giữa cô vũ nữ Esmeralda xinh đẹp và những người ái mộ nàng. Người mãnh liệt hết mình, kẻ qua quýt vờn quanh, người sẵn sàng hy sinh, kẻ không từ thủ đoạn – họ yêu theo nhiều cách khác biệt và “đã hại lẫn nhau vì trò đùa bí ẩn của định mệnh”. Trong trò chơi đuổi bắt trớ trêu mà ai cũng mải mê chạy theo cái bóng của ái tình, từng nhân vật đã bộc lộ ra những phẩm chất giấu kín bên trong họ, với những giằng xé hết sức con người mà ta chẳng bao giờ hiểu được nếu chỉ nhìn vào bề nổi của câu chuyện mang hơi hướng “người đẹp và quái vật” này.</div>
+      <br>
+      <div><b>Một số nhận xét:</b>
+        <br>
+        “Cuốn sách không có tham vọng lịch sử gì, có chăng chỉ là phác họa lại các phong tục tập quán, tín ngưỡng, luật lệ, nghệ thuật, văn hóa của thế kỷ XV, với một chút khoa học và ý thức, nhưng chỉ dừng ở mức bao quát và thoáng qua. Vả chăng, đó không phải là điều quan trọng của cuốn sách. Nếu nó có một giá trị, thì chính bởi nó là một tác phẩm của trí tưởng tượng, ngẫu hứng và kỳ ảo.” - Victor Hugo<br><br>
+        
+        “Nhà thờ Đức Bà Paris là một quyển sách khủng khiếp và mạnh mẽ. Đây là nơi mà cảm hứng, thiên tài, sự táo bạo, sự điềm tĩnh vững vàng và ý chí kiên cường của tác giả lan tỏa với tất cả sức mạnh. Chính cuốn sách này đây là một trang tuyệt vời rứt ra từ lịch sử của chúng ta, và chói lọi rạng rỡ vô cùng trong sự nghiệp văn chương của tác giả.” - Jules Janin<br><br>
+        
+        “Ông lấy ngôi nhà thờ Paris làm trọng tâm cho tác phẩm của mình, và quanh ngôi đền Kitô giáo đó, ông đã tập hợp lại mọi hình tượng của đời sống quốc gia dân tộc. Phœbus, Gringoire, Claude Frollo, Quasimodo là những vai truyện được suy ngẫm từ lâu, là những nhân vật đã đúc kết lại, một cách rất thi vị, những thân phận nhân sinh và tập quán của xã hội Pháp ở thế kỷ XV.” - Gustave Planche</div>
+    </div>
+    <div id="end">    <hr>
+      <p >Cần hỗ trợ ?</p>
+      <div id="ende">Email: <a href="mailto:bookintheworld@gmail.com">bookintheworld@gmail.com</a></div>
+      <div id="endt">Tel: <a href="tel:+84964046497">+84964046497</a></div>
+      <br>
+      <div>Founder: Tấn Vinh, Ý Nhi.</div>
+                </div>
+  </body>
+</html>
+
     <style>
       @import "style.css";
     </style>
