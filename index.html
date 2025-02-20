@@ -4,30 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Book in The World</title>
-<link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style> 
  
       @import "style.css";
     </style>
   </head>
-  
+  <!-- ảnh bìa -->
     <div id="period1">
       <div id="content1">
         Book in The World
       </div>
    </div>
-      <!-- PHẦN HEADER -->
+      <!-- phần mở đầu -->
       <div id="Modau">
         <div id="Tieude">
-          <div id="Logo">
+          <!-- logo -->
+          <div > 
             <a href="index.html" id="a0"><h1 id="h1_1">Book in The World</h1></a>
           </div>
+          <!-- ngày tháng năm -->
           <div id="date-time"></div>
           <script>
             function updateDateTime() {
@@ -53,57 +49,45 @@
             updateDateTime();
           </script>
       </div>
-
-      <div class="search-container">
-        <form class="search-box">
-          <input type="text" class="search-text" placeholder="Search..." />
-          <button type="submit" class="search-button">
+<!-- hộp tìm kiếm -->
+      <div id="search-container">
+        <form id="search-box">
+          <input type="text" id="search-text" placeholder="Search..." />
+          <button type="submit" id="search-button">
+            <!-- tạo nút tìm kiếm-->
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
         </form>
       </div>
     </div>
-
-
-
    <!-- thư mục -->
-    <ul class="menu">
-      <li><a href="">Giới thiệu về chúng tôi</a></li>
+    <ul id="menu">
+      <li><a href="#item1">Giới thiệu về chúng tôi</a></li>
       <li><a href="vanhocvietnam.html">Văn học Việt Nam</a></li>
       <li><a href="vanhocnuocngoai.html">Văn học nước ngoài</a></li>
-      <li><a href="">Nhà phê bình</a></li>
+      <li><a href="cms.html">Nhà phê bình</a></li>
     </ul>
-
-    <hr class="hr2" />
-
+    <hr id="hr2" />
     <!-- slogan -->
     <div id="slogan">
       <i
         >Những cuốn sách giúp ta mở rộng kiến thức, nuôi dưỡng trí tưởng tượng
-        và phát triển tư duy.<br />
+        và phát triển tư duy.<bra />
         Sách dẫn ta đến những chân trời mới mà ta chưa được biết...</i
       >
     </div>
-
-    <!-- giới thiệu -->
-
      <div id="noidung">
-        <div>
+        <!--giới thiệu về chúng tôi  -->
+      <div>
           <div>
-      
-            <a id="part1" href=""><h1 id="item1">Giới thiệu về chúng tôi</h1></a></div>
-      
+            <h1 id="item1">Giới thiệu về chúng tôi</h1></div>
              <div id="intro">Đây là một trang web lập ra với mục đích khơi gợi niềm hứng thú đọc sách đối với các bạn trẻ Trần Phú. Nối tiếp chặng đường của The Books Glow, Book in the world là một Câu Lạc Bộ 4.0 giúp các bạn có thể dễ dàng tìm thấy những cuốn sách thú vị, đúng "gu", đắm chìm trong thế giới tưởng tượng của chính mình.</div>
           </div>
-      
           <!-- một số bài đánh giá -->
-          <div>
-        
-              <a href="" id="part2"><h1 id="item2"> Một số bài đánh giá</h1></a>
-            
-               
-                  <div id="period2a">
-    
+          <div>     
+              <h1 id="item2"> Một số bài đánh giá</h1>            
+                  <!-- ngôi nhà bên bờ biển xanh thẳm -->
+              <div id="period2a">
                     <img
                       src="https://pibook.vn/upload/notice/review-sach-ngoi-nha-ben-bo-bien-xanh-tham-ins-im.jpg"
                       alt="ảnh lỗi"
@@ -115,8 +99,7 @@
                         những người chúng ta lựa chọn để ở bên…”
                       </div>
                   </div>
-                 
-          
+                  <!-- người đua diều -->
                   <div id="period2b0">
                     <div id="not"></div>
                     <div id="period2b">
@@ -134,21 +117,20 @@
                       />
                     </div>
                   </div>
-              
               </div>
-</div>
-      
-        
-          <!-- FORM ĐĂNG KÝ -->
-         
-       <div id="joincha">  
-        <a href="text.html" class="join-btn">Tham gia ngay</a></div>
+  </div>
+<!-- nút đăng ký -->
+       <div id="join">  
+        <a href="text.html" id="join-btn">Tham gia ngay</a></div>
           <!-- kết -->
+           <hr>
           <div id="end">
-            <p id="endp">Trang web được lập bởi Tấn Vinh và Ý Nhi
-<br>Mọi thắc mắc xin liên hệ <a href="tel:0964046497">Tại đây</a></p>
+<p >Cần hỗ trợ ?</p>
+<div id="ende">Email: <a href="mailto:bookintheworld@gmail.com">bookintheworld@gmail.com</a></div>
+<div id="endt">Tel: <a href="tel:+84964046497">+84964046497</a></div>
+<br>
+<div>Founder: Tấn Vinh, Ý Nhi.</div>
           </div>
-        </body>
      </div>
 
   </body>
